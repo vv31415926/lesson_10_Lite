@@ -4,7 +4,6 @@ class Gamer:
     def __init__(self, name):
         self.name = name
         self.card = Cards()
-        #self.barrel=[]
 
     def get_name(self):
         return self.name
