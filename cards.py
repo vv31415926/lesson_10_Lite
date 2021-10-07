@@ -28,7 +28,7 @@ class Cards:
         for r in range(0,2 ):   # оставить в строке только 5 номеров
             lstx = random.sample( lst9, 4 )
             for c in lstx:
-                self.lst_card[r][c][0] = 0
+                self.lst_card[r][c][0] = 0   #  [0] - число на бочке [1] - 0:не выпало, 1-выпало
 
         r = 2
         isNul = True
@@ -41,7 +41,6 @@ class Cards:
                     break
         for c in lstx:
             self.lst_card[r][c][0] = 0
-
 
     def seek_number(self, num ):
         yes = False
